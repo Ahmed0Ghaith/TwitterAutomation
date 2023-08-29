@@ -1,0 +1,14 @@
+let ScrollVal=100;
+//delay time by millisecond
+let delay=2000;
+//querySelector catch the unlike button
+
+let querySelector='[data-testid="unlike"]';
+setInterval(() => {
+var items =document.querySelectorAll(querySelector);
+for (let index = 0; index < items.length; index++) {
+    items[index].click();
+ }
+ScrollVal=ScrollVal+500;
+  window.scroll(0,ScrollVal);
+}, delay);
